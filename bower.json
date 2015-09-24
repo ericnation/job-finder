@@ -1,0 +1,16 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "authors": [
+    "Eric Nation <eric.nation@gmail.com>"
+  ],
+  "description": "Job Finding Demo App",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.6",
+    "bootstrap": "~3.3.5"
+  }
+}
