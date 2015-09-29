@@ -9,15 +9,6 @@ var jobSchema = mongoose.Schema({
     }
 });
 
-var Job = mongoose.model('Job', jobSchema);
+mongoose.model('Job', jobSchema);
 
-exports.seedJobs = function() {
-    Job.find({}).exec(function(error, collection) {
-        if(collection.length === 0) {
-            Job.create({title: 'Cook', description: 'You will be making bagels'});
-            Job.create({title: 'Waiter', description: 'You will be putting food on people tables'});
-            Job.create({title: 'Programmer', description: 'You will be programming software applications'});
-            Job.create({title: 'Axe Maker', description: 'You will be crafting custom made axes'});
-        }
-    });
-}
+
